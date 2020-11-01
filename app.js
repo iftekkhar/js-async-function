@@ -15,4 +15,13 @@ async function execute() {
     fightCorona().then(result => console.log(result));
 }
 
+// async function execute() {
+//     try {
+//         await wearPPE().then(result => console.log(result));
+//     } catch (e) {
+//         console.error(e)
+//     }
+//     fightCorona().then(result => console.log(result));
+// }
+
 execute();
