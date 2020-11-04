@@ -9,18 +9,20 @@ function fightCorona() {
         setTimeout(() => resolve('Fighting Corona'), 1000);
     })
 }
-
+// Async Await Actual Syntax 
 async function execute() {
-    await wearPPE().then(result => console.log(result));
-    fightCorona().then(result => console.log(result));
+    const promise = wearPPE();
+    const result = await promise;
+    console.log(result);
+
+    const promise2 = fightCorona();
+    const result2 = await promise2;
+    console.log(result2);
 }
 
+//Asysnc Await added with out changing the code structure
 // async function execute() {
-//     try {
-//         await wearPPE().then(result => console.log(result));
-//     } catch (err) {
-//         console.error(err)
-//     }
+//     await wearPPE().then(result => console.log(result));
 //     fightCorona().then(result => console.log(result));
 // }
 
