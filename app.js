@@ -18,8 +18,8 @@ async function execute() {
 // async function execute() {
 //     try {
 //         await wearPPE().then(result => console.log(result));
-//     } catch (e) {
-//         console.error(e)
+//     } catch (err) {
+//         console.error(err)
 //     }
 //     fightCorona().then(result => console.log(result));
 // }
